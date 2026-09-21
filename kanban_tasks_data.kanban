@@ -1,0 +1,81 @@
+{
+	"categories": [
+		{
+			"uuid": "1a82b3bb-3c53-45e9-bf87-48f5ee14022b",
+			"title": "Task",
+			"color": "569eff"
+		},
+		{
+			"uuid": "f58c3b82-277d-4dfc-95f9-1917db563855",
+			"title": "Player",
+			"color": "310ebc"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "33c79c3c-eb0d-4ead-b1d4-67301c0c47d0",
+			"title": "To Do",
+			"tasks": [
+				"3527733a-6a5b-45d4-be49-445c66aa1c8d",
+				"3d14cc42-03d5-44de-acbd-8b6a180cfd26"
+			]
+		},
+		{
+			"uuid": "f47482c1-21de-40d4-b59f-b833845c05b2",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "ff2acc82-d968-443b-b654-fd6455657b4c",
+			"title": "Done",
+			"tasks": []
+		},
+		{
+			"uuid": "05250d59-a216-48c2-aed5-277a9ae44d65",
+			"title": "New Stage",
+			"tasks": []
+		},
+		{
+			"uuid": "406a7186-ab39-427c-be07-74a65d98e234",
+			"title": "New Stage",
+			"tasks": []
+		},
+		{
+			"uuid": "675b9e5c-6670-46a8-9ee7-6dfacfcab97f",
+			"title": "New Stage",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "3527733a-6a5b-45d4-be49-445c66aa1c8d",
+			"title": "Player cannot fit inside straight enterance",
+			"description": "Fixed Temporally with bigger entrances",
+			"category": "f58c3b82-277d-4dfc-95f9-1917db563855",
+			"steps": []
+		},
+		{
+			"uuid": "3d14cc42-03d5-44de-acbd-8b6a180cfd26",
+			"title": "Add more sprites",
+			"description": "",
+			"category": "f58c3b82-277d-4dfc-95f9-1917db563855",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"33c79c3c-eb0d-4ead-b1d4-67301c0c47d0",
+				"f47482c1-21de-40d4-b59f-b833845c05b2"
+			],
+			[
+				"ff2acc82-d968-443b-b654-fd6455657b4c",
+				"406a7186-ab39-427c-be07-74a65d98e234"
+			],
+			[
+				"05250d59-a216-48c2-aed5-277a9ae44d65",
+				"675b9e5c-6670-46a8-9ee7-6dfacfcab97f"
+			]
+		]
+	}
+}

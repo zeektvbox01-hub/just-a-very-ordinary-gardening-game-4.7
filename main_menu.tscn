@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dwpynuov0f5br"]
+
+[node name="Main Menu" type="Node2D" unique_id=1890859203]
+
+[node name="Sky" type="ColorRect" parent="." unique_id=1259681430]
+offset_left = 1.0
+offset_top = -8.0
+offset_right = 640.0
+offset_bottom = 207.0
+color = Color(0, 1, 1, 1)
+
+[node name="Ground" type="ColorRect" parent="." unique_id=1763944439]
+offset_left = -2.0
+offset_top = 205.0
+offset_right = 639.0
+offset_bottom = 362.0
+color = Color(0, 1, 0.45490196, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1052046958]
+offset_left = -2.0
+offset_top = 109.0
+offset_right = 628.0
+offset_bottom = 276.0
+rotation = -0.17627825
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 53
+text = "This is a gardening game"
+
+[node name="Button" type="Button" parent="." unique_id=592877725]
+offset_left = 172.0
+offset_top = 235.0
+offset_right = 453.0
+offset_bottom = 341.0
+theme_override_font_sizes/font_size = 64
+text = "Start"
