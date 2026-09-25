@@ -1,0 +1,20 @@
+{
+  "current": "crops_e3bd",
+  "boards": [
+    {
+      "id": "roadmap_2a9b",
+      "name": "Roadmap",
+      "path": "res://godoban_boards/roadmap_2a9b.json"
+    },
+    {
+      "id": "player_3981",
+      "name": "Player",
+      "path": "res://godoban_boards/player_3981.json"
+    },
+    {
+      "id": "crops_e3bd",
+      "name": "Crops",
+      "path": "res://godoban_boards/crops_e3bd.json"
+    }
+  ]
+}

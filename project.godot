@@ -14,6 +14,12 @@ config/name="A RPG"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AchievementManager="*uid://dj1bkxbqna8jt"
+QuestSystem="*uid://b77kvbliweux5"
+DialogueManager="*uid://c3rodes2l3gxb"
+
 [display]
 
 window/size/viewport_width=640
@@ -23,7 +29,14 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
+enabled=PackedStringArray("res://addons/Swift_Inventory/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godoban/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/log/plugin.cfg", "res://addons/milestone/plugin.cfg", "res://addons/quest_system/plugin.cfg")
+
+[milestone]
+
+general/achievements_path="res://addons/milestone/demo/achievements/"
+debug/print_errors=true
+debug/print_output=true
+general/save_as_json=true
 
 [physics]
 

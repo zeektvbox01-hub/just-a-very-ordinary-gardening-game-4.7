@@ -1,0 +1,18 @@
+{
+  "name": "Player",
+  "next_id": 3,
+  "tags": [],
+  "epics": [
+    {
+      "id": "epic_1",
+      "title": "Animation",
+      "color": "569eff"
+    },
+    {
+      "id": "epic_2",
+      "title": "Features",
+      "color": "ffff56"
+    }
+  ],
+  "tasks": []
+}

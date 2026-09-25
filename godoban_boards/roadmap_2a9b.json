@@ -1,0 +1,58 @@
+{
+  "name": "Roadmap",
+  "next_id": 4,
+  "tags": [
+    "Dev",
+    "Version 0.1",
+    "Bug"
+  ],
+  "epics": [],
+  "tasks": [
+    {
+      "id": "task_1",
+      "title": "Version 0.1 dev 1",
+      "description": "The first release of A very ordinary farming game(AVOFG).\n-30 Crops(Crops Boards)\n-5 Level of Tools(Tools Board)\n-Woodcutting(Woodcutting Board) and Mining(Mining)\n-Fishing(Fishing Board) and Cooking(Cooking Board)\n-5 Dungeons\n-50 enemies\n-20 mutations\n-100 types of gear\n-A village and overworld to explore\n-50 Towers,with 10 upgardes each",
+      "status": "in_progress",
+      "priority": "low",
+      "epic_id": null,
+      "due_date": null,
+      "tags": [
+        "Dev",
+        "Version 0.1"
+      ],
+      "created_at": 1790158746,
+      "updated_at": 1790158746
+    },
+    {
+      "id": "task_2",
+      "title": "Version 0.1 Dev 1 Patches",
+      "description": "Bug fixes for dev 1",
+      "status": "backlog",
+      "priority": "low",
+      "epic_id": null,
+      "due_date": null,
+      "tags": [
+        "Dev",
+        "Version 0.1",
+        "Bug"
+      ],
+      "created_at": 1790158853,
+      "updated_at": 1790158896
+    },
+    {
+      "id": "task_3",
+      "title": "Version 0.1 Dev 2",
+      "description": "A update to the first release of A very ordinary farming game(AVOFG).\n-50 NEW Crops(Crops Boards)\n-3 NEW Level of Tools(Tools Board)\n-NEW things to get in Woodcutting(Woodcutting Board),ishing(Fishing Board) and Mining(Mining)\n-NEW things to make in Cooking(Cooking Board)\n-NEW feature - Crafting(Crafting Board\n-UPDATED Dungeons\n-10 NEW enemies\n-NEW type of enemies-5 Bosses\n-30 NEW mutations\n-30 NEW types of gear\n-A BIGGER village to explore",
+      "status": "backlog",
+      "priority": "low",
+      "epic_id": null,
+      "due_date": null,
+      "tags": [
+        "Dev",
+        "Version 0.1"
+      ],
+      "created_at": 1790158885,
+      "updated_at": 1790159238
+    }
+  ]
+}
