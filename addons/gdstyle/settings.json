@@ -1,0 +1,5 @@
+{
+	"auto_format_on_save": true,
+	"auto_lint_on_save": true,
+	"binary_path": ".local/bin/gdstyle"
+}

@@ -81,7 +81,11 @@ func _unhandled_input(event: InputEvent) -> void:
 					var current_progress: int = entry.get_progress_current()
 					var target: int = entry.get_progress_max()
 
-					var message: String = "Progress for '%s': %d/%d" % [entry.get_name(), current_progress, target]
+					var message: String = "Progress for '%s': %d/%d" % [
+						entry.get_name(),
+						current_progress,
+						target,
+					]
 					print(message)
 					demo_notification_label.set_text(message)
 

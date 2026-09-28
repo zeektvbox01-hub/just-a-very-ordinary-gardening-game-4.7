@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://8rttckgbjmd4"]
+
+[ext_resource type="Script" uid="uid://dlyc70dcb6vy1" path="res://debris.gd" id="1_ov8td"]
+[ext_resource type="Texture2D" uid="uid://bb6fiq7oge01k" path="res://Debris.png" id="2_axoec"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iaj20"]
+radius = 8.0
+height = 18.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6mu84"]
+radius = 30.0
+
+[node name="Debris" type="StaticBody2D" unique_id=70319179]
+script = ExtResource("1_ov8td")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2039306766]
+position = Vector2(315, 184)
+texture = ExtResource("2_axoec")
+
+[node name="Label" type="Label" parent="." unique_id=883115864]
+offset_left = 276.0
+offset_top = 160.0
+offset_right = 364.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 8
+text = "Press Space to remove"
+
+[node name="Debris Collision" type="CollisionShape2D" parent="." unique_id=1602674744]
+position = Vector2(315, 184)
+shape = SubResource("CapsuleShape2D_iaj20")
+
+[node name="Interaction" type="Area2D" parent="." unique_id=1682010206]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Debris Interaction" type="CollisionShape2D" parent="Interaction" unique_id=486269740]
+position = Vector2(315, 184)
+shape = SubResource("CircleShape2D_6mu84")
+
+[connection signal="area_shape_entered" from="Interaction" to="Interaction" method="_on_area_shape_entered"]
+[connection signal="area_shape_exited" from="Interaction" to="Interaction" method="_on_area_shape_exited"]

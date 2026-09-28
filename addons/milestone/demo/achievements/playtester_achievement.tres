@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Achievement" format=3 uid="uid://cuaiwf3emqfau"]
+
+[ext_resource type="Texture2D" uid="uid://cg3b84ak8bsrv" path="res://addons/milestone/icons/hidden_achievement.svg" id="1_qhvul"]
+[ext_resource type="Texture2D" uid="uid://dmbey47vfsa2g" path="res://addons/milestone/icons/missing_icon.svg" id="2_sm8x7"]
+[ext_resource type="Script" uid="uid://dtyojmellf4e5" path="res://addons/milestone/scripts/achievements/achievement.gd" id="3_io14o"]
+
+[resource]
+script = ExtResource("3_io14o")
+id = "playtester_achievement"
+name = "First Joiners Special"
+description = "Playtested the game in Version 0.1 dev"
+hidden = true
+considered_rare = true
+progress_goal = 1.0

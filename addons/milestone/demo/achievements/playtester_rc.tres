@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Achievement" format=3 uid="uid://lxbmhnnxkx5g"]
+
+[ext_resource type="Texture2D" uid="uid://cg3b84ak8bsrv" path="res://addons/milestone/icons/hidden_achievement.svg" id="1_bnlhj"]
+[ext_resource type="Texture2D" uid="uid://dmbey47vfsa2g" path="res://addons/milestone/icons/missing_icon.svg" id="2_x0621"]
+[ext_resource type="Script" uid="uid://dtyojmellf4e5" path="res://addons/milestone/scripts/achievements/achievement.gd" id="3_njg7n"]
+
+[resource]
+script = ExtResource("3_njg7n")
+id = "playtester_rc"
+name = "Bug Fixer"
+description = "Playtested the game in version 0.1 beta or RC"
+hidden = true
+considered_rare = true
+progress_goal = 1.0

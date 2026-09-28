@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://cijp5rbnyr4s5"]
+
+[ext_resource type="Script" uid="uid://b2p0txtpoa4g6" path="res://addons/quest_graph_editor/scripts/condition.gd" id="1_lfjib"]
+[ext_resource type="Script" uid="uid://cfe1v5f8lirmp" path="res://addons/quest_graph_editor/scripts/condition_set.gd" id="2_oewma"]
+[ext_resource type="Script" uid="uid://c4tisw7a0xvbg" path="res://addons/quest_graph_editor/scripts/quest.gd" id="3_jypyr"]
+[ext_resource type="Script" uid="uid://dspop1ic25pwd" path="res://addons/quest_graph_editor/scripts/quest_stage.gd" id="4_5i152"]
+
+[sub_resource type="Resource" id="Resource_f07do"]
+script = ExtResource("2_oewma")
+
+[sub_resource type="Resource" id="Resource_70n30"]
+script = ExtResource("2_oewma")
+
+[resource]
+script = ExtResource("3_jypyr")
+id = "Helping the garden grow!"
+title = "New Quest"
+prerequisites = SubResource("Resource_70n30")
+completion_condition = SubResource("Resource_f07do")
+auto_start = true
+editor_graph_position = Vector2(0, -20)

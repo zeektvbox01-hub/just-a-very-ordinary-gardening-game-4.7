@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://bah3na0m07rk6"]
+
+[ext_resource type="Script" uid="uid://b2p0txtpoa4g6" path="res://addons/quest_graph_editor/scripts/condition.gd" id="1_xgfck"]
+[ext_resource type="Script" uid="uid://cfe1v5f8lirmp" path="res://addons/quest_graph_editor/scripts/condition_set.gd" id="2_k6tje"]
+[ext_resource type="Script" uid="uid://c4tisw7a0xvbg" path="res://addons/quest_graph_editor/scripts/quest.gd" id="3_6v2fj"]
+[ext_resource type="Script" uid="uid://dspop1ic25pwd" path="res://addons/quest_graph_editor/scripts/quest_stage.gd" id="4_smenn"]
+
+[sub_resource type="Resource" id="Resource_thkg3"]
+script = ExtResource("2_k6tje")
+
+[sub_resource type="Resource" id="Resource_osffr"]
+script = ExtResource("2_k6tje")
+
+[resource]
+script = ExtResource("3_6v2fj")
+id = "new_quest_1"
+title = "New Quest"
+prerequisites = SubResource("Resource_osffr")
+completion_condition = SubResource("Resource_thkg3")
+editor_graph_position = Vector2(680, -20)
