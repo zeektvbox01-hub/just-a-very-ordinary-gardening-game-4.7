@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SwiftItemData" format=3 uid="uid://51fcrucjfrji"]
+
+[ext_resource type="Texture2D" uid="uid://dvtaq4ymclou0" path="res://broken-plank.png" id="1_pfqhk"]
+[ext_resource type="Script" uid="uid://cq5053m8y7vf1" path="res://addons/Swift_Inventory/Classes/SwiftItemData.gd" id="1_xxiv8"]
+
+[resource]
+script = ExtResource("1_xxiv8")
+id = &"\"broken_planks\""
+display_name = "Broken Planks"
+description = "Some useless broken planks.Harvest for 5 wood"
+icon = ExtResource("1_pfqhk")
+max_stack_size = 999
+metadata/_custom_type_script = "uid://cq5053m8y7vf1"

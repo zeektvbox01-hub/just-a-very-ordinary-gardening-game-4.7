@@ -1,29 +1,44 @@
-extends Node2D
+extends StaticBody2D
 
-var local_shape_owner
-var local_shape_node
+static var input_handled_this_frame: bool = false
+
+var can_interact: bool = false
 
 
 func _ready() -> void:
-	$Label.hide()
+	$"Interaction Notice".hide()
+	$Time.hide()
 
 
-func _on_area_shape_entered(
-	_area_rid: RID,
-	_area: Area2D,
-	_area_shape_index: int,
-	local_shape_index: int,
-) -> void:
-	local_shape_owner = $Interaction.shape_find_owner(local_shape_index)
-	local_shape_node = $Interaction.shape_owner_get_owner(local_shape_owner)
-	if local_shape_node.name == "Debris Interaction":
-		$Label.show()
+func _process(_delta: float) -> void:
+	$Time.text = str(int($"Removal Time".time_left)) + " seconds"
+	input_handled_this_frame = false
 
 
-func _on_area_shape_exited(
-	_area_rid: RID,
-	_area: Area2D,
-	_area_shape_index: int,
-	_local_shape_index: int,
-) -> void:
-	$Label.hide()
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact"):
+		if can_interact and not input_handled_this_frame:
+			input_handled_this_frame = true
+			Log.pr("You can get stone stabs,stone,broken slabs,mossy slabs,mossy slabs")
+			$"Removal Time".start()
+			$Time.show()
+
+
+func _on_interaction_body_entered(_body: Node2D) -> void:
+	$"Interaction Notice".show()
+	can_interact = true
+
+
+func _on_interaction_body_exited(_body: Node2D) -> void:
+	$"Interaction Notice".hide()
+	$Time.hide()
+	$"Removal Time".stop()
+	can_interact = false
+
+
+func _on_interact_timer_timeout() -> void:
+	set_process(false)
+
+
+func _on_removal_time_timeout() -> void:
+	queue_free()

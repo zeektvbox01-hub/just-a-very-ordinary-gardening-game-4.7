@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dx7iex8ubbesy"]
+
+[ext_resource type="Script" uid="uid://dnp6muoj3e72d" path="res://addons/Swift_Inventory/Classes/SwiftGrid.gd" id="1_psafj"]
+[ext_resource type="Resource" uid="uid://byouvpntrxmlx" path="res://inventory.tres" id="2_5tt2m"]
+
+[node name="Control" type="Control" unique_id=420332154]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SwiftGrid" type="Container" parent="." unique_id=416049512]
+custom_minimum_size = Vector2(32, 284)
+layout_mode = 0
+offset_right = 291.0
+offset_bottom = 284.0
+script = ExtResource("1_psafj")
+inventory_size = 64
+swift_inventory = ExtResource("2_5tt2m")
+slot_size = Vector2i(32, 32)
+metadata/_custom_type_script = "uid://dnp6muoj3e72d"

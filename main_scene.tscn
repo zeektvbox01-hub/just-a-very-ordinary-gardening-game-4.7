@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://d2nwtdma6dfno"]
 
 [ext_resource type="PackedScene" uid="uid://dwpynuov0f5br" path="res://main_menu.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://bl6tt5745haer" path="res://main_scene.gd" id="1_gyfs4"]
+[ext_resource type="PackedScene" uid="uid://c1yx3k80svjrs" path="res://indieflower_garden.tscn" id="2_2c62f"]
+[ext_resource type="Script" uid="uid://wn30x7o3f47m" path="res://addons/milestone/scripts/achievements/achievement_notifier.gd" id="4_d5x1h"]
 
 [node name="Main Scene" type="Node2D" unique_id=699091892]
+script = ExtResource("1_gyfs4")
 
 [node name="Main Menu" parent="." unique_id=1890859203 instance=ExtResource("1_0f027")]
+
+[node name="Indieflower Garden" parent="." unique_id=1951999075 instance=ExtResource("2_2c62f")]
+
+[node name="AchievementNotifier" type="Node" parent="." unique_id=1883913231]
+script = ExtResource("4_d5x1h")
+metadata/_custom_type_script = "uid://wn30x7o3f47m"

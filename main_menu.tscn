@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dwpynuov0f5br"]
 
 [ext_resource type="Script" uid="uid://cpboisnr8og7a" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="Script" uid="uid://wn30x7o3f47m" path="res://addons/milestone/scripts/achievements/achievement_notifier.gd" id="2_7vrkn"]
 
 [node name="Main Menu" type="Node2D" unique_id=1890859203]
 script = ExtResource("1_06t4h")
@@ -37,9 +36,5 @@ offset_right = 453.0
 offset_bottom = 341.0
 theme_override_font_sizes/font_size = 64
 text = "Start"
-
-[node name="AchievementNotifier" type="Node" parent="." unique_id=509417683]
-script = ExtResource("2_7vrkn")
-metadata/_custom_type_script = "uid://wn30x7o3f47m"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
