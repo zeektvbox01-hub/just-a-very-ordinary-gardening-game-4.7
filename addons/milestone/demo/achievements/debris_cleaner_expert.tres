@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Achievement" format=3 uid="uid://kil4524ygycx"]
+
+[ext_resource type="Texture2D" uid="uid://cg3b84ak8bsrv" path="res://addons/milestone/icons/hidden_achievement.svg" id="1_qronk"]
+[ext_resource type="Texture2D" uid="uid://clpgqa3ary0br" path="res://debris_cleaner.png" id="2_qronk"]
+[ext_resource type="Script" uid="uid://dtyojmellf4e5" path="res://addons/milestone/scripts/achievements/achievement.gd" id="3_hrtko"]
+
+[resource]
+script = ExtResource("3_hrtko")
+id = "debris_cleaner_expert"
+icon = ExtResource("2_qronk")
+group = "Debris"
+name = "Expert Award:Debris Cleaning"
+description = "Clear 10000 Debris"
+hidden = true
+considered_rare = true
+progressive = true
+progress_goal = 10000.0

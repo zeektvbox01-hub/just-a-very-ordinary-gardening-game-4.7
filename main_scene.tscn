@@ -14,4 +14,5 @@ script = ExtResource("1_gyfs4")
 
 [node name="AchievementNotifier" type="Node" parent="." unique_id=1883913231]
 script = ExtResource("4_d5x1h")
+screen_corner = "TopLeft"
 metadata/_custom_type_script = "uid://wn30x7o3f47m"

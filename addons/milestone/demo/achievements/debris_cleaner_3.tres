@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Achievement" format=3 uid="uid://cxd14ox1x2pu5"]
+
+[ext_resource type="Texture2D" uid="uid://cg3b84ak8bsrv" path="res://addons/milestone/icons/hidden_achievement.svg" id="1_7051f"]
+[ext_resource type="Texture2D" uid="uid://clpgqa3ary0br" path="res://debris_cleaner.png" id="2_7051f"]
+[ext_resource type="Script" uid="uid://dtyojmellf4e5" path="res://addons/milestone/scripts/achievements/achievement.gd" id="3_hwmsu"]
+
+[resource]
+script = ExtResource("3_hwmsu")
+id = "debris_cleaner_3"
+icon = ExtResource("2_7051f")
+group = "Debris"
+name = "Debris Scavenger"
+description = "Remove 500 Debris"
+progressive = true
+progress_goal = 1.0

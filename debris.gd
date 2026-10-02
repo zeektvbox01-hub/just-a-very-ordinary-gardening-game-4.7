@@ -19,7 +19,6 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
 		if can_interact and not input_handled_this_frame:
 			input_handled_this_frame = true
-			Log.pr("You can get stone stabs,stone,broken slabs,mossy slabs,mossy slabs")
 			$"Removal Time".start()
 			$Time.show()
 
